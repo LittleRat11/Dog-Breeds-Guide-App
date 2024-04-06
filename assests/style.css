@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #2B86C5, #784BA0, #FF3CAC);
+}
+
+.header {
+    margin-bottom: 1rem;
+}
+
+.container {
+    padding: 2em 3em;
+    background-color: rgba(74, 135, 154, .5);
+    border-radius: 10px;
+    max-width: auto;
+}
+
+.search-info input {
+    padding: .8em 1.2em;
+    width: 300px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.search-info input:focus {
+    outline: none;
+}
+
+.search-info {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 300px 100px;
+    gap: 3em;
+}
+
+.search-info #search-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #FF3CAC;
+    color: white;
+}
+
+#result img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+#result h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.2em;
+}
+
+#result h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 1.2em;
+    text-align: center;
+    position: relative;
+}
+
+#result h3::before {
+    content: "";
+    width: 20%;
+    height: 3px;
+    position: absolute;
+    background-color: #D20062;
+    left: 40%;
+    bottom: -0.3em;
+}
+
+#result .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribute-text {
+    font-size: 18px;
+    font-weight: 600;
+    width: 150px;
+    text-transform: capitalize;
+}
+
+.attribute-lists {
+    margin-bottom: 1em;
+    gap: 3em;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.knowledge-container {
+    margin-bottom: 1em;
+    gap: 3em;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.knowledge-container h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.knowledge-container p {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+#result .notice {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
